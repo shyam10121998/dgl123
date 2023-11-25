@@ -81,7 +81,7 @@ function showSlides() {
 </div>  
 </div>
 <div class="btn-container">
-<a href="products.html" class="btn">See All</a>
+<a href="products.php" class="btn">See All</a>
 </div>
 </div>
 
@@ -92,7 +92,7 @@ function showSlides() {
 <p>
 We offer products such conifers,evergreen, vines, grasses, edibles and bamboos.Apart from plants and trees, we offer GIFT card certificates and Delivery serives as well.
 </p>
-<a href="services.html">Click here to know more</a>
+<a href="services.php">Click here to know more</a>
 </div>
 
 <!--Help-->
