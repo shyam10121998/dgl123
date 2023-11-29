@@ -79,6 +79,11 @@ function showSlides() {
 <h2>Deciduous</h2>
 </div>
 </div>
+<?php
+// Error Log
+// $errorMessage = "Error message: Something is incorrect with the 'Deciduous' part.";
+// error_log($errorMessage, 3, "http://localhost/dgl123/index.php/error.log");
+?>
 
 <div class="card">
 <img src="images/evergreenbanner.jpg" width="200" height="200" alt="Image 3">
