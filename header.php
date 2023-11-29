@@ -1,6 +1,6 @@
 <?php
 $proj_root = "E:\php and xampp\htdocs\dgl123";
-?>
+?>  
 <header>
         <div class="logo">
          <a href="index.php"> <img src="images/logo.jpg"  alt="Logo"></a>  
