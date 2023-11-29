@@ -153,7 +153,7 @@ Little by little the property was cleared and one by one the greenhouses and irr
     //             <div class="text">
     //                 <p>' . $reviewText . ' <strong>Don and Michael</strong></p>
     //             </div>
-    //         </div>';
+    //         </div>'; 
     // } catch (Exception $e) {
     //    echo '<div class="block">
     //             <div class="text">
