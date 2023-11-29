@@ -102,6 +102,10 @@ We offer products such conifers,evergreen, vines, grasses, edibles and bamboos.A
 <a href="services.php">Click here to know more</a>
 </div>
 
+<?php
+// Manual Breakpoint
+//exit("Breakpoint here!");
+?>
 <!--Help-->
 
 <div class="help content" >
