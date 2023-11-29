@@ -1,3 +1,10 @@
+<?php
+
+// Production environment error levels
+error_reporting(0);
+ini_set('display_errors', '0');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,6 +112,14 @@ We offer products such conifers,evergreen, vines, grasses, edibles and bamboos.A
 <div class="search-bar">
     <form method="POST" action="question_submit.php">
         <input type="text" placeholder="Ask a question here" name="question">
+
+        <?php
+            // Dump the Variables
+            //$exQuestion = "How can we help you?";
+            //var_dump($exQuestion);
+            // Result: string(20) "How can we help you?"
+            ?>
+
         <button class="helpbutton" type="submit">Submit</button>
     </form>
 </div>
@@ -129,6 +144,25 @@ Little by little the property was cleared and one by one the greenhouses and irr
  
 <h1 class="reviewh1 content">Our recent reviews</h1>
     <div class="container content">
+    <?php
+    // // Stack Trace
+    // try {
+    //     $reviewText = "For the past eight years, our loyalty has been unwavering towards Outback, a family-owned nursery nestled on Vancouver Island. Their profound passion for cultivating vibrant plants, especially Japanese maples, has captivated us. Annette's invaluable expertise guides us in selecting the perfect specimens. The nursery's commitment to maintaining healthy stock, along with their warm and personalized service, keeps us coming back. What's more, their fair prices have made our journey towards creating a beautiful garden not only delightful but also affordable.";
+    //     $nonExistentMethod();
+    //     echo '<div class="block">
+    //             <div class="text">
+    //                 <p>' . $reviewText . ' <strong>Don and Michael</strong></p>
+    //             </div>
+    //         </div>';
+    // } catch (Exception $e) {
+    //    echo '<div class="block">
+    //             <div class="text">
+    //                 <p>Error occurred: ' . $e->getMessage() . '</p>
+    //             </div>
+    //         </div>';
+    //     echo '<pre>' . $e->getTraceAsString() . '</pre>';
+    // }
+    ?>
         <div class="block">
             <div class="text">
                 <p>
