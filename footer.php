@@ -1,3 +1,6 @@
+<?php
+$proj_root = "E:\php and xampp\htdocs\dgl123";
+?>
 <footer class="footer">
         <div class="footer-content">
             <h1>Outback Nursery</h1>
