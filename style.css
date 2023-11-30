@@ -876,14 +876,4 @@ strong{
             border-radius: 3px;
         }
 
-                                            /*  Responsive part */
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-}
+                                
