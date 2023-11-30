@@ -83,6 +83,9 @@ Hazelnuts - EFB (Eastern Filbert Blight) resistant - new varieties - Jefferson, 
 
                                                     <!--product categories-->
 
+    <h1 style="margin-bottom: -40px;">
+        product categories 
+    </h1>
     <div class="category-container content">
     
     <?php
