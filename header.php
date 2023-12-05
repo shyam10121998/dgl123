@@ -12,6 +12,7 @@
                 <li><a href="login.php">Login</a></li>
                 <li><a href="registration.php">Sign Up</a></li>
                 <li><a href="logout.php">LogOut</a></li>
+                <li><a href="wishlist.php">Wishlist</a></li>
             </ul>
         </nav>
     </header>
