@@ -13,6 +13,14 @@ if ($categoryId) {
     $products = $mysqli->query($productsSql);
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+
+    if (isset($_POST['search_button'])) {
+        header('Location: ' . 'products-template.php?category_id=' . $categoryId . '&search_text=' . $_POST['search_text']);
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -34,19 +42,29 @@ if ($categoryId) {
 
     <div class="global content">
         <h1 class="globalh1"><?php echo $categoryName  ?></h1>
+        <div>
+
+<form action="" method="POST" style="max-width: 990px;">
+
+    <input type="text" name="search_text" />
+    <button name="search_button" type="submit">Search</button>
+</form>
+</div>
         <div class="globalcards">
 
-            <?php
+        <?php
 
-            while ($product = $products->fetch_assoc()) {
-                echo "<div class='globalcard'>
-                        <img src='images/{$product['image']}' alt='Image 1'>
-                        <div class='globalcard-text'>
-                            <h2>{$product['name']}</h2>
-                        </div>
-                    </div>";
-            }
-            ?>
+while ($product = $products->fetch_assoc()) {
+    echo "<div class='globalcard'>
+            <img src='images/{$product['image']}' alt='Image 1'>
+            <div class='globalcard-text'>
+                <h2>{$product['name']}</h2>
+                <a href='add-to-wishlist.php?product_id={$product['id']}&product_category_id={$categoryId}'><i class='fa fa-heart' aria-hidden='true'></i></a>
+                
+            </div>
+        </div>";
+}
+?>
 
         </div>
     </div>
